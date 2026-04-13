@@ -1,0 +1,134 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff;color:#111;font-family:'Space Grotesk',sans-serif;min-height:100vh}
+.wrap{max-width:960px;margin:0 auto;padding:80px 64px 120px}
+.eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#888;margin-bottom:20px}
+h1{font-size:64px;font-weight:300;letter-spacing:-0.03em;line-height:1;color:#000;margin-bottom:0}
+h1 strong{font-weight:600}
+.sub{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#888;margin:16px 0 28px;display:flex;gap:16px;flex-wrap:wrap}
+.sub span{display:flex;align-items:center;gap:6px}
+.sub span::before{content:'';width:4px;height:4px;border-radius:50%;background:#bbb}
+.sub span:first-child::before{display:none}
+.bio{font-size:16px;line-height:1.75;color:#111;font-weight:300;max-width:640px;margin-bottom:56px;border-left:2px solid #000;padding-left:20px}
+.bio a{color:#000;text-decoration:underline;text-underline-offset:3px}
+.section-block{border-top:1px solid #000}
+.section-head{padding:16px 0;border-bottom:1px solid #ccc}
+.section-label{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:#666;font-weight:400}
+.section-inner{padding:20px 0 8px}
+.project{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;padding:24px 0;border-bottom:1px solid #e0e0e0}
+.project:last-child{border-bottom:none}
+.proj-name{font-size:16px;font-weight:500;color:#000;margin-bottom:6px}
+.proj-name a{color:#000;text-decoration:none}
+.proj-name a:hover{text-decoration:underline;text-underline-offset:3px}
+.proj-desc{font-size:14px;color:#111;line-height:1.7;font-weight:300;max-width:600px}
+.proj-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.status{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#888;white-space:nowrap}
+.status.active{color:#000}
+.interests{display:flex;flex-wrap:wrap;gap:0}
+.interest-item{font-size:14px;color:#111;font-weight:300;padding:12px 0;border-bottom:1px solid #e0e0e0;width:100%;display:flex;align-items:center;gap:10px}
+.interest-item::before{content:'→';color:#aaa;font-size:11px}
+.interest-item:last-child{border-bottom:none}
+.about-text{font-size:15px;line-height:1.85;color:#111;font-weight:300;max-width:680px}
+.about-text a{color:#000;text-decoration:underline;text-underline-offset:3px}
+.contact{display:grid;grid-template-columns:80px 1fr;gap:14px 0;align-items:baseline}
+.contact-key{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#888}
+.contact-val{font-size:14px;color:#000;font-weight:400}
+.contact-val a{color:#000;text-decoration:none;border-bottom:1px solid #ccc}
+.contact-val a:hover{border-color:#000}
+</style>
+
+<div class="wrap">
+
+  <div class="eyebrow">Harrison Hu</div>
+  <h1><strong>Engineer</strong></h1>
+  <div class="sub">
+    <span>Canberra, AU</span>
+    <span>Energy Infrastructure</span>
+    <span>Distributed Systems</span>
+  </div>
+
+  <p class="bio">Engineer on a WA Government-funded distributed energy resource integration programme. Research assistant at UNSW Canberra.</p>
+
+  <div class="section-block">
+    <div class="section-head"><span class="section-label">Now</span></div>
+    <div class="section-inner">
+      <div class="project">
+        <div>
+          <div class="proj-name"><a href="https://www.wa.gov.au/government/announcements/project-jupiter" target="_blank">Project Jupiter</a> — Synergy</div>
+          <div class="proj-desc">WA Government and ARENA-funded initiative to integrate distributed energy resources into the South West Interconnected System via virtual power plants.</div>
+        </div>
+        <div class="proj-right"><span class="status active">Active</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="section-head"><span class="section-label">Shipped</span></div>
+    <div class="section-inner">
+      <div class="project">
+        <div>
+          <div class="proj-name"><a href="https://www.aliv-ai.com/" target="_blank">ALIV</a></div>
+          <div class="proj-desc">Founding engineer (part-time). AI-powered streaming platform built across desktop, mobile, and browser extension. Unity-integrated avatar models. Partnerships across multiple live streaming networks.</div>
+        </div>
+        <div class="proj-right"><span class="status">Live</span></div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="proj-name"><a href="https://github.com/platopod/platopod" target="_blank">Plato Pod</a> — UNSW Canberra</div>
+          <div class="proj-desc">Research assistant under Dr. Artem Lenskiy. Open-source educational robotics platform for first-year students. Built ROS2 server, AprilTag vision pipeline, and WebSocket API. ESP32-C3 robots, overhead camera tracking, CBRN gas simulation.</div>
+        </div>
+        <div class="proj-right"><span class="status">Research</span></div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="proj-name"><a href="https://www.drinkinn.cn/" target="_blank">Drinkinn</a></div>
+          <div class="proj-desc">Early engineer (part-time). AI-powered drink recognition — ingredients, calories, and health insights. 4,000+ beta users. 16,000 followers on Xiaohongshu.</div>
+        </div>
+        <div class="proj-right"><span class="status">Live</span></div>
+      </div>
+      <div class="project">
+        <div>
+          <div class="proj-name"><a href="https://www.remeielts.cn/" target="_blank">RemeIELTS</a></div>
+          <div class="proj-desc">Freelance. Built core features from scratch for an AI-powered IELTS prep platform. Grew to 2,000+ active users.</div>
+        </div>
+        <div class="proj-right"><span class="status">Live</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="section-head"><span class="section-label">Interests</span></div>
+    <div class="section-inner">
+      <div class="interests">
+        <div class="interest-item">Long-horizon infrastructure</div>
+        <div class="interest-item">Energy markets</div>
+        <div class="interest-item">Distributed systems</div>
+        <div class="interest-item">Startups with structural moats</div>
+        <div class="interest-item">Things that take decades to break</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="section-head"><span class="section-label">About</span></div>
+    <div class="section-inner">
+      <div class="about-text">
+        <p>Freelancing through university meant re-introducing myself with every new client — explaining what I'd built, what I could do, over and over. Later, three months at <a href="https://dinq.me/" target="_blank">DINQ</a>, a product built around finding and presenting people, pointed to the same thing. A presence on the internet reduces friction. Send one link instead of explaining yourself from scratch. By the time someone reaches out, they already know who you are — the first meeting skips the introduction and gets to the point.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <div class="section-head"><span class="section-label">Contact</span></div>
+    <div class="section-inner">
+      <div class="contact">
+        <div class="contact-key">GitHub</div>
+        <div class="contact-val"><a href="https://github.com/Erio-Harrison" target="_blank">github.com/Erio-Harrison</a></div>
+        <div class="contact-key">Email</div>
+        <div class="contact-val">u7541840@gmail.com</div>
+      </div>
+    </div>
+  </div>
+
+</div>
