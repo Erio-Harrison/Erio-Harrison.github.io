@@ -19,12 +19,14 @@ h1 strong{font-weight:600}
 .project{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;padding:24px 0;border-bottom:1px solid #e0e0e0}
 .project:last-child{border-bottom:none}
 .proj-name{font-size:16px;font-weight:500;color:#000;margin-bottom:6px}
-.proj-name a{color:#000;text-decoration:none}
+.proj-name a{color:#000;text-decoration:none;display:block}
 .proj-name a:hover{text-decoration:underline;text-underline-offset:3px}
 .proj-desc{font-size:14px;color:#111;line-height:1.7;font-weight:300;max-width:600px}
+.proj-desc a{color:#111;text-decoration:underline;text-underline-offset:3px}
 .proj-right{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
 .status{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#888;white-space:nowrap}
 .status.active{color:#000}
+.role-tag{font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;white-space:nowrap}
 .interests{display:flex;flex-wrap:wrap;gap:0}
 .interest-item{font-size:14px;color:#111;font-weight:300;padding:12px 0;border-bottom:1px solid #e0e0e0;width:100%;display:flex;align-items:center;gap:10px}
 .interest-item::before{content:'→';color:#aaa;font-size:11px}
@@ -55,7 +57,7 @@ h1 strong{font-weight:600}
     <div class="section-inner">
       <div class="project">
         <div>
-          <div class="proj-name"><a href="https://www.wa.gov.au/government/announcements/project-jupiter" target="_blank">Project Jupiter</a> — Synergy</div>
+          <div class="proj-name"><a href="https://www.wa.gov.au/government/announcements/project-jupiter" target="_blank">Project Jupiter — Synergy</a></div>
           <div class="proj-desc">WA Government and ARENA-funded initiative to integrate distributed energy resources into the South West Interconnected System via virtual power plants.</div>
         </div>
         <div class="proj-right"><span class="status active">Active</span></div>
@@ -69,30 +71,30 @@ h1 strong{font-weight:600}
       <div class="project">
         <div>
           <div class="proj-name"><a href="https://www.aliv-ai.com/" target="_blank">ALIV</a></div>
-          <div class="proj-desc">Founding engineer (part-time). AI-powered streaming platform built across desktop, mobile, and browser extension. Unity-integrated avatar models. Partnerships across multiple live streaming networks.</div>
+          <div class="proj-desc">AI-powered streaming platform built across desktop, mobile, and browser extension. Unity-integrated avatar models. Partnerships across multiple live streaming networks.</div>
         </div>
-        <div class="proj-right"><span class="status">Live</span></div>
+        <div class="proj-right"><span class="role-tag">Founding Engineer</span></div>
       </div>
       <div class="project">
         <div>
-          <div class="proj-name"><a href="https://github.com/platopod/platopod" target="_blank">Plato Pod</a> — UNSW Canberra</div>
-          <div class="proj-desc">Research assistant under Dr. Artem Lenskiy. Open-source educational robotics platform for first-year students. Built ROS2 server, AprilTag vision pipeline, and WebSocket API. ESP32-C3 robots, overhead camera tracking, CBRN gas simulation.</div>
+          <div class="proj-name"><a href="https://github.com/platopod/platopod" target="_blank">Plato Pod — UNSW Canberra</a></div>
+          <div class="proj-desc">Open-source educational robotics platform for first-year students, under <a href="https://www.linkedin.com/in/lenskiy/" target="_blank">Dr. Artem Lenskiy</a>. Built ROS2 server, AprilTag vision pipeline, and WebSocket API. ESP32-C3 robots, overhead camera tracking, CBRN gas simulation.</div>
         </div>
-        <div class="proj-right"><span class="status">Research</span></div>
+        <div class="proj-right"><span class="role-tag">RA</span></div>
       </div>
       <div class="project">
         <div>
           <div class="proj-name"><a href="https://www.drinkinn.cn/" target="_blank">Drinkinn</a></div>
-          <div class="proj-desc">Early engineer (part-time). AI-powered drink recognition — ingredients, calories, and health insights. 4,000+ beta users. 16,000 followers on Xiaohongshu.</div>
+          <div class="proj-desc">AI-powered drink recognition — ingredients, calories, and health insights. 4,000+ beta users. 16,000 followers on Xiaohongshu.</div>
         </div>
-        <div class="proj-right"><span class="status">Live</span></div>
+        <div class="proj-right"><span class="role-tag">Early Engineer</span></div>
       </div>
       <div class="project">
         <div>
           <div class="proj-name"><a href="https://www.remeielts.cn/" target="_blank">RemeIELTS</a></div>
-          <div class="proj-desc">Freelance. Built core features from scratch for an AI-powered IELTS prep platform. Grew to 2,000+ active users.</div>
+          <div class="proj-desc">AI-powered IELTS prep platform. Built core features from scratch. Grew to 2,000+ active users.</div>
         </div>
-        <div class="proj-right"><span class="status">Live</span></div>
+        <div class="proj-right"><span class="role-tag">Freelance</span></div>
       </div>
     </div>
   </div>
