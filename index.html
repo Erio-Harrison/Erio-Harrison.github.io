@@ -33,10 +33,7 @@ h1 strong{font-weight:600}
 .status{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#555;white-space:nowrap}
 .status.active{color:#000}
 .role-tag{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:#555;white-space:nowrap}
-.interests{display:flex;flex-wrap:wrap;gap:0}
-.interest-item{font-size:15px;color:#111;font-weight:400;padding:12px 0;border-bottom:1px solid #e0e0e0;width:100%;display:flex;align-items:center;gap:10px}
-.interest-item::before{content:'→';color:#555;font-size:12px}
-.interest-item:last-child{border-bottom:none}
+.interests-text{font-size:15px;line-height:1.85;color:#111;font-weight:400;max-width:680px}
 .about-text{font-size:15px;line-height:1.85;color:#111;font-weight:400;max-width:680px}
 .about-text a{color:#000;text-decoration:underline;text-underline-offset:3px}
 .contact{display:grid;grid-template-columns:80px 1fr;gap:14px 0;align-items:baseline}
@@ -110,13 +107,7 @@ h1 strong{font-weight:600}
   <div class="section-block">
     <div class="section-head"><span class="section-label">Interests</span></div>
     <div class="section-inner">
-      <div class="interests">
-        <div class="interest-item">Long-horizon infrastructure</div>
-        <div class="interest-item">Energy markets</div>
-        <div class="interest-item">Distributed systems</div>
-        <div class="interest-item">Startups with structural moats</div>
-        <div class="interest-item">Hope to build things that last</div>
-      </div>
+      <p class="interests-text">Long-horizon infrastructure · Energy markets · Distributed systems · Startups with structural moats · Hope to build things that last.</p>
     </div>
   </div>
 
